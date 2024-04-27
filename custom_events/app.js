@@ -14,25 +14,29 @@ const server = http.createServer();
 // Creating event-emitter instance
 let myEmitter = new events.EventEmitter();
 
-// Define custom event names
+// Define custom event names and their corressponding getter enum 
 const MyEvents = {
     Route: "route",
     Unknown: "unknown",
     ServerHit: "serverhit",
     Request: "request",
 
+    // Getter for Route
     getRoute(){
         return MyEvents.Route;
     },
 
+    // Getter for Request
     getRequest(){
         return MyEvents.Request;
     },
 
+    // Getter for Server Hit
     getServerHit(){
         return MyEvents.ServerHit;
     },
 
+    // Getter for Unknown
     getUnknown(){
         return MyEvents.Unknown;
     }
