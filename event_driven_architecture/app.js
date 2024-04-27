@@ -20,6 +20,7 @@ server.listen(8000, '127.0.0.1', () => {
 /*
   For event based architecture, 
   listening to the every request event
+  this is also widely known as observer pattern
 */
 server.on('request', (req, res) => {
 
