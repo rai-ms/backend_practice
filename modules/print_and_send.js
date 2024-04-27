@@ -1,5 +1,5 @@
 
-module.exports = function sendResponse(response, res){
+module.exports = function (response, res){
     print("Sendig Response: " + response);
     res.end(response);
 }
